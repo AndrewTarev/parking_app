@@ -1,4 +1,4 @@
-from sqlalchemy import select, Result
+from sqlalchemy import Result, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from src.api_v1.schemas.parking_schemas import ParkingIn

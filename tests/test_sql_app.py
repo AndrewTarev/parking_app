@@ -1,8 +1,8 @@
 # pip install pytest-asyncio
 # pip install pytest
 
-from httpx import AsyncClient
 import pytest
+from httpx import AsyncClient
 
 
 @pytest.mark.asyncio

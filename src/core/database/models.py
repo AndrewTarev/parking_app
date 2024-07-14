@@ -2,7 +2,7 @@ import asyncio
 from datetime import datetime, timedelta
 from typing import List
 
-from sqlalchemy import String, ForeignKey, func, UniqueConstraint
+from sqlalchemy import ForeignKey, String, UniqueConstraint, func
 from sqlalchemy.ext.hybrid import hybrid_property
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 

@@ -2,7 +2,7 @@ from datetime import datetime, timezone
 from math import ceil
 
 from fastapi import HTTPException, status
-from sqlalchemy import update, func, select, Result
+from sqlalchemy import Result, func, select, update
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from src.api_v1.cruds import parking_crud

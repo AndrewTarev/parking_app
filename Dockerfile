@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM python:3.12
 
 RUN mkdir /fastapi_app
 
@@ -10,9 +10,7 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-WORKDIR src
-
-CMD gunicorn main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind=0.0.0.0:8000
+RUN chmod a+x docker/app.sh
 
 # docker build . -t fastapi_app:latest
 # docker run -d -p 8000:8000 fastapi_app

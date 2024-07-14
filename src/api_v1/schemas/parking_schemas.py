@@ -1,7 +1,7 @@
 from typing import Annotated, Self
 
 from annotated_types import Ge, Le
-from pydantic import BaseModel, model_validator, ConfigDict
+from pydantic import BaseModel, ConfigDict, model_validator
 
 
 class BaseParking(BaseModel):

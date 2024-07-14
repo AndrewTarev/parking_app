@@ -1,13 +1,10 @@
 from fastapi import HTTPException, status
-from sqlalchemy import select, Result
+from sqlalchemy import Result, select
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from src.api_v1.schemas.client_schemas import (
-    ClientUpdate,
-    ClientUpdatePartial,
-    ClientIn,
-)
+from src.api_v1.schemas.client_schemas import (ClientIn, ClientUpdate,
+                                               ClientUpdatePartial)
 from src.core.database.models import Client
 
 

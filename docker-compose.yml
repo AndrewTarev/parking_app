@@ -1,0 +1,25 @@
+version: '3.9'
+
+services:
+  app:
+    build:
+      dockerfile: Dockerfile
+    stop_signal: SIGKILL
+    ports:
+      - "8000:8000"
+    command: ["/fastapi_app/docker/app.sh"]
+    depends_on:
+      - db
+    networks:
+      - my_network
+
+  db:
+    image: postgres:15
+    env_file:
+      - .env
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge

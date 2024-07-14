@@ -2,10 +2,7 @@ from fastapi import APIRouter, Depends, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from src.api_v1.cruds import client_parking_crud
-
-from src.api_v1.dependencies import (
-    get_client_parking_by_id,
-)
+from src.api_v1.dependencies import get_client_parking_by_id
 from src.api_v1.schemas import client_parking_schemas
 from src.core.database.db_helper import db_helper
 
