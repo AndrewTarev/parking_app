@@ -17,6 +17,8 @@ services:
     image: postgres:15
     env_file:
       - .env
+    volumes:
+      - ./db/:/var/lib/postgresql/data
     networks:
       - my_network
 
