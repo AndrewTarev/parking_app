@@ -1,0 +1,6 @@
+# Здесь указанно расположение приложения для pytest
+[tool.pytest.ini_options]
+pythonpath = [
+    '.', 'src'
+]
+asyncio_mode="auto"  # Указывается авто, для работы с асинхронностью
