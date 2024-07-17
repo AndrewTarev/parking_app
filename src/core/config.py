@@ -13,11 +13,6 @@ class Settings(BaseSettings):
     POSTGRES_NAME: str
     POSTGRES_USER: str
     POSTGRES_PASSWORD: str
-    # DB_HOST: str
-    # DB_PORT: int
-    # DB_USER: str
-    # DB_PASS: str
-    # DB_NAME: str
 
     DB_HOST_TEST: str
     DB_PORT_TEST: int
